@@ -1,0 +1,117 @@
+17-09-26.14:19:36.127 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 5908 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:19:36.130 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:19:36.130 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:20:06.757 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 10136 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:20:06.760 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:20:06.760 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:20:10.361 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 3.995 seconds (JVM running for 4.455)
+17-09-26.14:20:14.173 [http-nio-8089-exec-1] DEBUG c.s.y.SpringBootTest [36]- 老杨fff
+17-09-26.14:20:25.127 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 10136 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:20:25.128 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:20:25.128 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:20:26.348 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 1.271 seconds (JVM running for 20.442)
+17-09-26.14:23:24.171 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 7536 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:23:24.174 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:23:24.174 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:23:27.358 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 3.542 seconds (JVM running for 3.986)
+17-09-26.14:23:28.538 [http-nio-8089-exec-1] DEBUG c.s.y.SpringBootTest [36]- 老杨
+17-09-26.14:25:30.170 [http-nio-8089-exec-4] DEBUG c.s.y.SpringBootTest [36]- 老杨
+17-09-26.14:25:47.867 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 7536 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:25:47.867 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:25:47.867 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:25:49.209 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 1.409 seconds (JVM running for 145.837)
+17-09-26.14:27:02.210 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 9000 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:27:02.212 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:27:02.212 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:27:05.265 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 3.404 seconds (JVM running for 3.851)
+17-09-26.14:27:06.088 [http-nio-8089-exec-1] DEBUG c.s.y.SpringBootTest [36]- 老杨都
+17-09-26.14:27:19.951 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 9000 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:27:19.952 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:27:19.952 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:27:20.942 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 1.056 seconds (JVM running for 19.528)
+17-09-26.14:31:35.115 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 916 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:31:35.118 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:31:35.118 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:31:38.132 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 3.392 seconds (JVM running for 3.835)
+17-09-26.14:31:44.474 [http-nio-8089-exec-1] DEBUG c.s.y.SpringBootTest [36]- 老杨
+17-09-26.14:32:02.047 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 916 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:32:02.048 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:32:02.048 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:32:03.214 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 1.235 seconds (JVM running for 28.917)
+17-09-26.14:34:43.030 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:34:43.032 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:34:43.032 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:34:46.079 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 3.409 seconds (JVM running for 3.842)
+17-09-26.14:35:30.171 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:35:30.171 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:35:30.171 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:35:31.466 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 1.341 seconds (JVM running for 49.229)
+17-09-26.14:35:34.419 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:35:34.419 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:35:34.420 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:35:35.661 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 1.281 seconds (JVM running for 53.424)
+17-09-26.14:35:56.044 [http-nio-8089-exec-1] DEBUG c.s.y.SpringBootTest [36]- 老杨
+17-09-26.14:36:08.568 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:36:08.568 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:36:08.568 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:36:09.334 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.81 seconds (JVM running for 87.097)
+17-09-26.14:36:17.758 [http-nio-8089-exec-1] DEBUG c.s.y.SpringBootTest [36]- 老杨d
+17-09-26.14:37:08.200 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:37:08.201 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:37:08.201 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:37:08.823 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.658 seconds (JVM running for 146.586)
+17-09-26.14:37:10.433 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:37:10.433 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:37:10.434 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:37:12.166 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 1.768 seconds (JVM running for 149.929)
+17-09-26.14:37:14.218 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:37:14.218 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:37:14.219 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:37:14.942 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.795 seconds (JVM running for 152.705)
+17-09-26.14:37:36.646 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:37:36.646 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:37:36.646 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:37:37.402 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.787 seconds (JVM running for 175.165)
+17-09-26.14:40:25.877 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:40:25.878 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:40:25.878 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:40:26.746 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.903 seconds (JVM running for 344.509)
+17-09-26.14:48:07.320 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:48:07.321 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:48:07.321 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:48:07.893 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.616 seconds (JVM running for 805.656)
+17-09-26.14:49:03.779 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:49:03.779 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:49:03.779 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:49:04.374 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.624 seconds (JVM running for 862.137)
+17-09-26.14:50:01.185 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:50:01.186 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:50:01.186 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:50:01.864 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.707 seconds (JVM running for 919.627)
+17-09-26.14:50:04.421 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:50:04.421 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:50:04.421 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:50:04.991 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.598 seconds (JVM running for 922.754)
+17-09-26.14:51:37.116 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:51:37.116 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:51:37.116 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:51:37.703 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.663 seconds (JVM running for 1015.466)
+17-09-26.14:52:13.449 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 8504 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.14:52:13.450 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.14:52:13.450 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.14:52:14.288 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 0.876 seconds (JVM running for 1052.051)
+17-09-26.15:02:32.101 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 7584 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.15:02:32.103 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.15:02:32.103 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.15:02:36.094 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 4.342 seconds (JVM running for 4.971)
+17-09-26.15:13:04.087 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 9292 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.15:13:04.089 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.15:13:04.090 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.15:56:45.034 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 9248 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.15:56:45.036 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.15:56:45.036 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.15:56:49.184 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 4.532 seconds (JVM running for 5.06)
+17-09-26.16:45:43.058 [restartedMain] INFO  o.s.b.StartupInfoLogger [48]- Starting Application on ipaynow0929-PC with PID 11128 (D:\ipaynow\study\spring_boot\target\classes started by ipaynow0929 in D:\ipaynow\study\spring_boot)
+17-09-26.16:45:43.060 [restartedMain] DEBUG o.s.b.StartupInfoLogger [51]- Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+17-09-26.16:45:43.061 [restartedMain] INFO  o.s.b.SpringApplication [665]- The following profiles are active: dev
+17-09-26.16:45:47.153 [restartedMain] INFO  o.s.b.StartupInfoLogger [57]- Started Application in 4.467 seconds (JVM running for 4.943)
