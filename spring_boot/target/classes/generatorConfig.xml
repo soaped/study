@@ -10,7 +10,7 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
 
-        <!--navicat客户端的用户名密码:  ipnmcentread/Ipn#37mercent-->
+        <!--navicat客户端的用户名密�?:  ipnmcentread/Ipn#37mercent-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.0.51:3306/operation_identify" userId="root" password="$root@ipaynow_test" />
 
         <javaTypeResolver>

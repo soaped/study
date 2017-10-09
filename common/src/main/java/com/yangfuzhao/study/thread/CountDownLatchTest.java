@@ -1,4 +1,4 @@
-package com.yangfuzhao.study;
+package com.yangfuzhao.study.thread;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -46,7 +46,6 @@ public class CountDownLatchTest {
 
         public void run() {
             System.out.println("当前线程为：" + Thread.currentThread().getName());
-
         }
     }
 }
