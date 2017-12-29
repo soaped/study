@@ -3,7 +3,7 @@
 <generatorConfiguration >
 
     <context id="context1" >
-        <plugin type="com.ipaynow.npacc.mybatis_plugin.MySQLPaginationPlugin"></plugin>
+        <plugin type="com.ipaynow.npacc.mybatis_plugin.com.yangfuzhao.mybatus_plugin.MySQLPaginationPlugin"></plugin>
 
         <commentGenerator>
             <property name="suppressDate" value="true"/>

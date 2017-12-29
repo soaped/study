@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.yangfuzhao</groupId>
+        <artifactId>common</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <properties>
+        <springframework.version>4.1.7.RELEASE</springframework.version>
+        <spring-data-redis.version>1.6.0.RELEASE</spring-data-redis.version>
+
+        <dubbo.version>2.4.10</dubbo.version>
+        <zkclient.version>0.4</zkclient.version>
+
+        <mysql-connector-java>5.1.20</mysql-connector-java>
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis-spring.version>1.2.2</mybatis-spring.version>
+        <mybatis-generator-maven-plugin.version>1.3.2</mybatis-generator-maven-plugin.version>
+        <druid.version>1.0.16</druid.version>
+
+        <shiro-core.version>1.2.2</shiro-core.version>
+        <shiro-spring.version>1.2.2</shiro-spring.version>
+
+
+        <log4j.version>1.2.17</log4j.version>
+        <logback-core.version>1.1.2</logback-core.version>
+        <logback-classic.version>1.1.2</logback-classic.version>
+        <logback-access.version>1.1.2</logback-access.version>
+        <log4j-over-slf4j.version>1.7.7</log4j-over-slf4j.version>
+        <slf4j-log4j12.version>1.7.2</slf4j-log4j12.version>
+        <slf4j-api.version>1.7.5</slf4j-api.version>
+
+
+        <commons-io.version>2.4</commons-io.version>
+        <commons-beanutils>1.9.2</commons-beanutils>
+        <commons-lang3.version>3.3</commons-lang3.version>
+        <commons-collections4.version>4.0</commons-collections4.version>
+
+
+        <poi-ooxml.version>3.5-FINAL</poi-ooxml.version>
+        <commons-fileupload.version>1.3</commons-fileupload.version>
+        <com.fasterxml.jackson.version>2.7.3</com.fasterxml.jackson.version>
+        <fastjson.version>1.2.31</fastjson.version>
+        <json-lib>2.4</json-lib>
+        <gson.version>2.2.4</gson.version>
+        <jedis.version>2.4.2</jedis.version>
+        <freemarker.version>2.3.20</freemarker.version>
+        <httpclient.version>4.3</httpclient.version>
+        <javax.servlet-api>3.0.1</javax.servlet-api>
+
+        <quartz.version>2.2.1</quartz.version>
+        <mail.version>1.4.1</mail.version>
+        <commons-net.version>2.2</commons-net.version>
+        <jsch.version>0.1.42</jsch.version>
+        <org.projectlombok.version>1.16.10</org.projectlombok.version>
+        <zxing.core.version>2.2</zxing.core.version>
+        <junit.version>4.12</junit.version>
+        <aspectjrt.version>1.8.6</aspectjrt.version>
+        <aspectjweaver.version>1.8.6</aspectjweaver.version>
+        <xstream.version>1.4.9</xstream.version>
+
+        <org.apache.ant.version>1.8.1</org.apache.ant.version>
+        <org.codehaus.janino.version>2.6.1</org.codehaus.janino.version>
+        <net.coobird.thumbnailator.version>0.4.8</net.coobird.thumbnailator.version>
+        <grpc.version>0.13.2</grpc.version>
+        <protobuf.version>3.1.0</protobuf.version>
+    </properties>
+
+    <groupId>com.ipaynow.npacc.common_util</groupId>
+    <artifactId>common</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.22-SNAPSHOT</version>
+    <!--1.0.1- > 1.0.2 注释掉aes解密时候的 IllegalBlockSizeException 的 异常打印-->
+    <!--1.0.2- > 1.0.3 MailUtil密码需要AES加密，所以构造器添加解密代码， 加密串的计算见MailUtil的main方法-->
+    <!--1.0.3- > 1.0.4 增加jsonlib的依赖-->
+    <!--1.0.4- > 1.0.5 astjson在1.2.24以及之前版本存在高危安全漏洞，可远程执行服务器系统命令，可直接导致服务器被入侵。升级到1.2.28-->
+    <!--1.0.5- > 1.0.6  修改HttpClient post请求乱码bug-->
+    <!--1.0.6- > 1.0.7  增加cookie 操作类-->
+    <!--1.0.7- > 1.0.8  增加JaxbUtils 操作类,增加excel处理工具类,新增发送html格式的邮件-->
+    <!--1.0.8- > 1.0.9  增加 public static Date afterNSecDate(Date theDate, int nSecNum) -->
+    <!--1.0.10-> 1.0.11 增加freeMakerUtil -->
+    <!--1.0.9- > 1.0.10  jackon版本更新，文件压缩的方法变更到archiveUtil -->
+    <!--1.0.10- > 1.0.11 org.codehaus.janino 引入 logback过滤器需要依赖 ,增加freeMaker模板-->
+    <!--1.0.11- > 1.0.12 增加JsonSerializer-->
+    <!--1.0.12- > 1.0.13 增加ExportExcelUtil-->
+    <!--1.0.13- > 1.0.14  HttpTookit 新增超时时间设置方法-->
+    <!--1.0.14- > 1.0.15  增加UserAgentUtil类-->
+    <!--1.0.15- > 1.0.16  md5增加salt，增加excel处理方法，增加Pdf工具类-->
+    <!--1.0.16- > 1.0.17  DateUtil 类修改-->
+    <!--1.0.17- > 1.0.18  新增FileTypeUtil 提供根据文件头判断获取文件格式-->
+    <!--1.0.18- > 1.0.19  邮件发送端口修改为465-->
+    <!--1.0.19- > 1.0.20  jackson 版本2.7.0升级为2.7.3 ，原因2.7.0与spring 4.1.7 不兼容-->
+    <!--1.0.20- > 1.0.21 以xml标签形式导出excel -->
+    <!--1.0.21- > 1.0.22 以xml标签形式导出excel 兼容Microsoft Office -->
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>${org.apache.ant.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext-asian</artifactId>
+            <version>5.2.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobuf.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring-data-redis.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>${zkclient.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector-java}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>${mybatis-generator-maven-plugin.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro-spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-classic.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-access</artifactId>
+            <version>${logback-access.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>${log4j-over-slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons-beanutils}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${commons-collections4.version}</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${com.fasterxml.jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${com.fasterxml.jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${com.fasterxml.jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons-fileupload.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi-ooxml.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>${json-lib}</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>${quartz.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${mail.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>${commons-net.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>${jsch.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${org.projectlombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>${zxing.core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${springframework.version}</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectjrt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>${xstream.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet-api}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.janino</groupId>
+            <artifactId>janino</artifactId>
+            <version>${org.codehaus.janino.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.coobird</groupId>
+            <artifactId>thumbnailator</artifactId>
+            <version>${net.coobird.thumbnailator.version}</version>
+        </dependency>
+    </dependencies>
+
+
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>utf8</encoding>
+                </configuration>
+            </plugin>
+
+            <!--<plugin>-->
+            <!--<groupId>org.xolstice.maven.plugins</groupId>-->
+            <!--<artifactId>protobuf-maven-plugin</artifactId>-->
+            <!--<version>0.5.0</version>-->
+
+            <!--<configuration>-->
+            <!--<protocArtifact>com.google.protobuf:protoc:3.1.0:exe:windows-x86_64-->
+            <!--</protocArtifact>-->
+            <!--<pluginId>grpc-java</pluginId>-->
+            <!--<pluginArtifact>-->
+            <!--io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:windows-x86_64-->
+            <!--</pluginArtifact>-->
+            <!--<protoSourceRoot>src/main/proto</protoSourceRoot>-->
+            <!--</configuration>-->
+
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<goals>-->
+            <!--<goal>compile</goal>-->
+            <!--<goal>compile-custom</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
+
+
+        </plugins>
+    </build>
+</project>

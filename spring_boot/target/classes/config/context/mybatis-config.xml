@@ -17,7 +17,7 @@
         <property name="dataSource" ref="operation_demo3" />
         <!--<property name="plugins">-->
             <!--<array>-->
-                <!--<bean class="com.ipaynow.npacc.mybatis_plugin.EncryptInterceptor">-->
+                <!--<bean class="com.ipaynow.npacc.mybatis_plucom.yangfuzhao.mybatus_plugin.EncryptInterceptorptor">-->
                     <!--<property name="properties">-->
                         <!--<props>-->
                             <!--<prop key="passwords">32c23e1d6bfafb48b97650e8fe79723d95717cc819e09d7398486fd43f0c2bf0fcbae04732313731587dfaff797a0a3279ebc8db4f7143d08a8a004ac9b623c18b0743f0cab9d35eabf63af4b5a8827b79dc7477103ea336b88149adaf474f35ff8cceb0d871f70a6fda141e99de0027fabbe78d76c3f2087619a918231669bf</prop>-->
