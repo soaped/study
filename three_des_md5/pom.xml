@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+		<parent>
+            <groupId>com.xyls</groupId>
+            <artifactId>study</artifactId>
+            <version>1.0-SNAPSHOT</version>
+ 		</parent>
+    <properties>
+        <commons-codec.version>1.9</commons-codec.version>
+        <commons-lang3.version>3.3</commons-lang3.version>
+    </properties>
+
+	<groupId>com.ipaynow.npacc.common_util</groupId>
+    <artifactId>three_des_md5</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${commons-codec.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+    </dependencies>
+
+
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+		<plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>2.3.2</version>
+              <configuration>
+                  <source>1.7</source>
+                  <target>1.7</target>
+                  <encoding>utf8</encoding>
+              </configuration>
+          	</plugin>
+        </plugins>
+    </build>
+
+</project>
