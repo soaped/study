@@ -6,3 +6,7 @@ common/target/
 common/common\.iml
 
 *.iml
+
+log/
+
+spring_boot/target/
