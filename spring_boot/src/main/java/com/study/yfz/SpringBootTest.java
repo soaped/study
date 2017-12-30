@@ -2,10 +2,13 @@ package com.study.yfz;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,16 +18,18 @@ import java.util.Date;
  * Created by ipaynow0929 on 2017/8/3.
  */
 @RestController
-@EnableAutoConfiguration
+@ConfigurationProperties(prefix = "user")
 public class SpringBootTest {
 
     private static Logger logger = LoggerFactory.getLogger(SpringBootTest.class);
 
-    @Value("${name}")
-    private String name;
+    @Getter
+    @Setter
+    private String user_name;
+
     @RequestMapping("/helloWorld")
     public void testPro(){
-        System .out.print(name + "aaa");
+        System .out.print(user_name + "aaa");
     }
 
     @RequestMapping("/testFastJson")

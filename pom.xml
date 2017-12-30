@@ -13,6 +13,7 @@
         <module>spring_boot</module>
         <module>mybatis_plugin</module>
         <module>common_util</module>
+        <module>dao</module>
     </modules>
 
     <build>
