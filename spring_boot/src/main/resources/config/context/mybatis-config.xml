@@ -17,7 +17,7 @@
         <property name="dataSource" ref="operation_demo3" />
         <!--<property name="plugins">-->
             <!--<array>-->
-                <!--<bean class="com.ipaynow.npacc.mybatis_plugin.EncryptInterceptor">-->
+                <!--<bean class="com.ipaynow.npacc.mybatis_plucom.yangfuzhao.mybatus_plugin.EncryptInterceptorptor">-->
                     <!--<property name="properties">-->
                         <!--<props>-->
                             <!--<prop key="passwords">${jdbc_aes_key}</prop>-->

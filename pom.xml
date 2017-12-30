@@ -4,13 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yangfuzhao</groupId>
+    <groupId>com.xyls</groupId>
     <artifactId>study</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>common</module>
         <module>spring_boot</module>
+        <module>mybatis_plugin</module>
+        <module>common_util</module>
     </modules>
 
     <build>
