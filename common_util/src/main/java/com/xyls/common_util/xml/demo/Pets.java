@@ -1,4 +1,4 @@
-package com.xyls.common.xml.demo;
+package com.xyls.common_util.xml.demo;
 
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 

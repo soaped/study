@@ -1,4 +1,4 @@
-package com.xyls.common.http_client;
+package com.xyls.common_util.http_client;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.http.client.config.RequestConfig;

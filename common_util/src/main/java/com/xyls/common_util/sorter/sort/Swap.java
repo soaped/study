@@ -1,4 +1,4 @@
-package com.xyls.common.sorter.sort;
+package com.xyls.common_util.sorter.sort;
 
 public class Swap{
 

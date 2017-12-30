@@ -1,7 +1,8 @@
-package com.xyls.common.xml.demo;
+package com.xyls.common_util.xml.demo;
 
 
-import com.ipaynow.npacc.common.xml.XStreamHelper;
+
+import com.xyls.common_util.xml.XStreamHelper;
 
 import java.util.ArrayList;
 import java.util.List;

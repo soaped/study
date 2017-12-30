@@ -1,8 +1,5 @@
 package com.xyls.common_util.secret.encrypt;
-
-
-
-import com.ipaynow.npacc.common.bytes.BytesUtil;
+import com.xyls.common_util.bytes.BytesUtil;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -133,14 +130,4 @@ public class RSAEncrypt {
             System.err.println(e.getMessage());
         }
     }
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
+}

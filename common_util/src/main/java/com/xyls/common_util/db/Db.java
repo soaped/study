@@ -1,4 +1,4 @@
-package com.xyls.common.db;
+package com.xyls.common_util.db;
 
 import org.apache.log4j.Logger;
 

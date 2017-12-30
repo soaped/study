@@ -1,6 +1,7 @@
 package com.xyls.common_util.sorter.sort;
 
-import com.ipaynow.npacc.common.sorter.SortUtil;
+
+import com.xyls.common_util.sorter.SortUtil;
 
 /**
  * @author treeroot
@@ -66,3 +67,5 @@ public class ImprovedMergeSort extends Swap implements SortUtil.Sort {
             }
         }
     }
+
+}

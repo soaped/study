@@ -1,4 +1,4 @@
-package com.xyls.common.common_mq;
+package com.xyls.common_util.common_mq;
 
 import org.apache.log4j.Logger;
 

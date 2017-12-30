@@ -1,7 +1,6 @@
-package com.xyls.common.secret.encrypt;
+package com.xyls.common_util.secret.encrypt;
 
 import sun.misc.BASE64Decoder;
-
 import java.io.IOException;
 import java.security.*;
 import java.security.interfaces.RSAPrivateKey;
