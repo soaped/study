@@ -1,4 +1,4 @@
-package com.study.yfz.dao.mybatis.domain;
+package com.study.xyls.dao.mybatis.domain;
 
 public class OperationIdentifyUserRole {
     private Integer id;

@@ -1,4 +1,4 @@
-package com.ipaynow.hr.schedule;
+package com.study.xyls.schedule;
 
 import org.joda.time.DateTime;
 import org.springframework.scheduling.annotation.Scheduled;

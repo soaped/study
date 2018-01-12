@@ -1,8 +1,7 @@
-package com.yangfuzhao.common.secret.encrypt;
+package com.xyls.common.secret.encrypt;
 
 
-
-import com.ipaynow.npacc.common.bytes.BytesUtil;
+import com.xyls.common.bytes.BytesUtil;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;

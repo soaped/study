@@ -1,4 +1,4 @@
-package com.ipaynow.hr.req;
+package com.study.xyls.req;
 
 import com.ipaynow.ipaynow_user.mvc_support.params.req.BaseReqPaginator;
 import lombok.Data;

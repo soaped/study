@@ -1,4 +1,4 @@
-package com.ipaynow.hr.req;
+package com.study.xyls.req;
 
 import lombok.Data;
 

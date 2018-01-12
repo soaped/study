@@ -1,7 +1,7 @@
-package com.study.yfz.dao.mybatis.mapper;
+package com.study.xyls.dao.mybatis.mapper;
 
-import com.study.yfz.dao.mybatis.domain.OperationIdentifyRole;
-import com.study.yfz.dao.mybatis.domain.OperationIdentifyRoleExample;
+import com.study.xyls.dao.mybatis.domain.OperationIdentifyRole;
+import com.study.xyls.dao.mybatis.domain.OperationIdentifyRoleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

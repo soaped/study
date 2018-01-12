@@ -1,4 +1,4 @@
-package com.yangfuzhao.common.db;
+package com.xyls.common.db;
 
 import org.apache.log4j.Logger;
 

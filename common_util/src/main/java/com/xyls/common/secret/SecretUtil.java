@@ -1,6 +1,6 @@
 package com.xyls.common.secret;
 
-import com.ipaynow.npacc.common.bytes.BytesUtil;
+import com.xyls.common.bytes.BytesUtil;
 
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;

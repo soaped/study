@@ -1,7 +1,7 @@
-package com.study.yfz.dao.mybatis.mapper;
+package com.study.xyls.dao.mybatis.mapper;
 
-import com.study.yfz.dao.mybatis.domain.OperationIdentifyBranch;
-import com.study.yfz.dao.mybatis.domain.OperationIdentifyBranchExample;
+import com.study.xyls.dao.mybatis.domain.OperationIdentifyBranch;
+import com.study.xyls.dao.mybatis.domain.OperationIdentifyBranchExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

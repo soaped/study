@@ -1,4 +1,4 @@
-package com.yangfuzhao.common.common_mq;
+package com.xyls.common.common_mq;
 
 
 public class ObjectQueue

@@ -1,7 +1,7 @@
-package com.study.yfz.dao.mybatis.mapper;
+package com.study.xyls.dao.mybatis.mapper;
 
-import com.study.yfz.dao.mybatis.domain.OperationIdentifyModule;
-import com.study.yfz.dao.mybatis.domain.OperationIdentifyModuleExample;
+import com.study.xyls.dao.mybatis.domain.OperationIdentifyModule;
+import com.study.xyls.dao.mybatis.domain.OperationIdentifyModuleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

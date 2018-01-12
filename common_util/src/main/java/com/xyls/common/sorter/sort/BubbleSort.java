@@ -1,6 +1,7 @@
 package com.xyls.common.sorter.sort;
 
-import com.ipaynow.npacc.common.sorter.SortUtil;
+
+import com.xyls.common.sorter.SortUtil;
 
 /**
  * @author treeroot

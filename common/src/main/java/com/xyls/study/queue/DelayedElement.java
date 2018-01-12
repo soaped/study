@@ -1,4 +1,4 @@
-package com.yangfuzhao.study.queue;
+package com.xyls.study.queue;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;

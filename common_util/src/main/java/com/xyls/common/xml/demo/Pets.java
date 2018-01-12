@@ -1,4 +1,4 @@
-package com.yangfuzhao.common.xml.demo;
+package com.xyls.common.xml.demo;
 
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
