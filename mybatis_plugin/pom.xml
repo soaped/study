@@ -19,6 +19,11 @@
             <artifactId>mybatis</artifactId>
             <version>3.4.0</version>
         </dependency>
-     </dependencies>
+        <dependency>
+            <groupId>com.ipaynow.npacc.common_util</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.22-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

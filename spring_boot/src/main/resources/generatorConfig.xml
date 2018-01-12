@@ -3,7 +3,7 @@
 <generatorConfiguration >
 
     <context id="context1" >
-        <plugin type="com.ipaynow.npacc.mybatis_plugin.com.yangfuzhao.mybatus_plugin.MySQLPaginationPlugin"></plugin>
+        <plugin type="com.ipaynow.npacc.mybatis_plugin.com.xyls.mybatus_plugin.MySQLPaginationPlugin"></plugin>
 
         <commentGenerator>
             <property name="suppressDate" value="true"/>
@@ -17,10 +17,10 @@
             <property name="forceBigDecimals" value="true" />
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.study.yfz.dao.mybatis.domain" targetProject="spring_boot/src/main/java" />
-        <sqlMapGenerator targetPackage="com.study.yfz.dao.mybatis.mapping" targetProject="spring_boot/src/main/resources" />
+        <javaModelGenerator targetPackage="com.study.xyls.dao.mybatis.domain" targetProject="spring_boot/src/main/java" />
+        <sqlMapGenerator targetPackage="com.study.xyls.dao.mybatis.mapping" targetProject="spring_boot/src/main/resources" />
         <!-- ����DAO�����ļ��Լ������ļ� trans_smlpay_ex-->
-        <javaClientGenerator targetPackage="com.study.yfz.dao.mybatis.mapper" targetProject="spring_boot/src/main/java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="com.study.xyls.dao.mybatis.mapper" targetProject="spring_boot/src/main/java" type="XMLMAPPER" />
 
        <!-- <table schema="" tableName="operation_identify_branch" domainObjectName="OperationIdentifyBranch">
             <property name="useActualColumnNames" value="false"/>
