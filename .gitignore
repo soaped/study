@@ -1,14 +1,8 @@
 .idea
 target/*
 
-common/target/
-
-common/common\.iml
+**/target/
 
 *.iml
 
-spring_boot/target/
-
-mybatis_plugin/target/
-
-common_util/target/
+log/*

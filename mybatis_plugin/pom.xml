@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yangfuzhao</groupId>
+    <groupId>com.xyls</groupId>
     <artifactId>mybatis_plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -20,8 +20,18 @@
             <version>3.4.0</version>
         </dependency>
         <dependency>
+<<<<<<< HEAD
             <groupId>com.ipaynow.npacc.common_util</groupId>
             <artifactId>common</artifactId>
+=======
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xyls</groupId>
+            <artifactId>common_util</artifactId>
+>>>>>>> master
             <version>1.0.22-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -17,7 +17,7 @@ public class SerializableTest {
 
     private static void output() {
         try {
-            FileOutputStream fos = new FileOutputStream("D:\\ipaynow\\study\\common\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\test.obj");
+            FileOutputStream fos = new FileOutputStream("D:\\ipaynow\\study\\common_util\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\test.obj");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 //            Person p1 = new Person.Builder().name("中华人民共和国").age(18).build();
             oos.writeObject(KryoTest.genPer(100));
@@ -31,7 +31,7 @@ public class SerializableTest {
 
     private static void input(){
         try {
-            FileInputStream fis = new FileInputStream("D:\\ipaynow\\study\\common\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\test.obj");
+            FileInputStream fis = new FileInputStream("D:\\ipaynow\\study\\common_util\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\test.obj");
             ObjectInputStream ois = new ObjectInputStream(fis);
             List p = (List) ois.readObject();
             System.out.print(p.toString());

@@ -23,7 +23,7 @@ public class KryoTest {
     private static void serialize() {
         try {
             FileOutputStream fileOut =
-                    new FileOutputStream("D:\\ipaynow\\study\\common\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\kryo.obj");
+                    new FileOutputStream("D:\\ipaynow\\study\\common_util\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\kryo.obj");
             com.esotericsoftware.kryo.io.Output objectOutput = new com.esotericsoftware.kryo.io.Output(fileOut);
             kryo.writeObject(objectOutput, genPer(100)  );
             objectOutput.close();
@@ -45,7 +45,7 @@ public class KryoTest {
     private static void unserialize() {
         try {
             FileInputStream fis =
-                    new FileInputStream("D:\\ipaynow\\study\\common\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\kryo.obj");
+                    new FileInputStream("D:\\ipaynow\\study\\common_util\\src\\main\\java\\com\\yangfuzhao\\study\\serializable\\kryo.obj");
             com.esotericsoftware.kryo.io.Input objectOutput = new com.esotericsoftware.kryo.io.Input(fis);
             List ps = kryo.readObject(objectOutput,ArrayList.class);
             objectOutput.close();

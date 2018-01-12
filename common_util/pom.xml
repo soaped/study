@@ -71,8 +71,8 @@
         <protobuf.version>3.1.0</protobuf.version>
     </properties>
 
-    <groupId>com.ipaynow.npacc.common_util</groupId>
-    <artifactId>common</artifactId>
+    <groupId>com.xyls</groupId>
+    <artifactId>common_util</artifactId>
     <packaging>jar</packaging>
     <version>1.0.22-SNAPSHOT</version>
     <!--1.0.1- > 1.0.2 注释掉aes解密时候的 IllegalBlockSizeException 的 异常打印-->

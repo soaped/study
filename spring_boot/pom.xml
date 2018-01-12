@@ -53,50 +53,11 @@
             <version>1.1.1</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.ipaynow.npacc.common_util</groupId>
+            <groupId>com.xyls</groupId>
             <artifactId>mybatis_plugin</artifactId>
-            <version>${mybatis_plugin}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.ipaynow.npacc.common_util</groupId>
-                    <artifactId>common</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.ipaynow.npacc.common_util</groupId>
-            <artifactId>three_des_md5</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.ipaynow.ipaynow_inner</groupId>
-            <artifactId>ipaynow_user_sdk</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.fasterxml.jackson.core</groupId>
-                    <artifactId>jackson-annotations</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <!--sql server java8连接-->
-        <!--<dependency>-->
-        <!--<groupId>com.microsoft.sqlserver</groupId>-->
-        <!--<artifactId>mssql-jdbc</artifactId>-->
-        <!--<version>6.1.0.jre8</version>-->
-        <!--</dependency>-->
-
-        <!--sql server java7连接-->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
@@ -127,40 +88,92 @@
         </dependency>
         <!--热部署-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <version>${spring.boot.version}</version>
-            <optional>true</optional>
-            <scope>true</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${org.projectlombok.version}</version>
-        </dependency>
-
-        <!--swagger2 -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.7.0</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.2.2</version>
         </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!--资源文件不编译-->
+                <filtering>false</filtering>
+                <targetPath>${project.build.directory}/classes</targetPath>
+            </resource>
+        </resources>
+        <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.2</version>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>
+                <encoding>utf8</encoding>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.1</version>
+            <configuration>
+                <path>/main</path>
+                <port>8080</port>
+                <uriEncoding>UTF-8</uriEncoding>
+            </configuration>
+        </plugin>
 
-        <!--时间-->
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>2.3</version>
-        </dependency>
+          <!--  <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <dependencies>
+                    &lt;!&ndash; spring热部署 &ndash;&gt;
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>springloaded</artifactId>
+                        <version>1.2.6.RELEASE</version>
+                    </dependency>
+                </dependencies>
+            </plugin>-->
+             <!--<plugin>-->
+                 <!--<groupId>org.springframework.boot</groupId>-->
+                 <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+                 <!--<version>${spring.boot.version}</version>-->
+                 <!--<configuration>-->
+                     <!--&lt;!&ndash;fork :  如果没有该项配置，devtools不会起作用，即应用不会restart &ndash;&gt;-->
+                     <!--<fork>true</fork>-->
+                 <!--</configuration>-->
+             <!--</plugin>-->
+        </plugins>
+    </build>
 
-
-
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <build>
+                <filters>
+                    <filter>src/main/resources/profiles/dev.properties</filter>
+                </filters>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources</directory>
+                        <filtering>true</filtering>
+                    </resource>
+                </resources>
+            </build>
 
     </dependencies>
 
