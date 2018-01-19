@@ -1,7 +1,7 @@
 package com.xyls.mybatus_plugin;
 
 
-import com.xyls.common.secret.SecretUtil;
+import com.xyls.common_util.secret.SecretUtil;
 
 /**
  * Created with IntelliJ IDEA.
