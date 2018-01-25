@@ -1,6 +1,5 @@
 package com.study.xyls.vo;
 
-import com.ipaynow.ipaynow_user.mvc_support.params.resp.Paginator;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

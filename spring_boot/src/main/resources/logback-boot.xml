@@ -9,7 +9,7 @@
 <!-- -->
 <configuration scan="true">
 	<jmxConfigurator />
-    <property name="LOG_HOME" value="./log/" />
+    <property name="LOG_HOME" value="../log/ipaynow_hr"/>
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{yy-MM-dd.HH:mm:ss.SSS} [%t] %-5p %C [%L]- %m%n</pattern>
@@ -19,10 +19,10 @@
             <level>ERROR</level>
         </filter>
     </appender>
-
-	<root level="ERROR">
-		 <appender-ref ref="CONSOLE"/>
-	</root>
+    
+    <root level="ERROR">
+        <appender-ref ref="CONSOLE"/>
+    </root>
 
     <appender name="controller_log_appender" class="ch.qos.logback.classic.sift.SiftingAppender">
         <discriminator>
@@ -45,10 +45,6 @@
             </appender>
         </sift>
     </appender>
-    <logger name="controller_log" level="DEBUG" additivity="false">
-        <appender-ref ref="controller_log_appender"/>
-        <appender-ref ref="CONSOLE"/>
-    </logger>
 
     <appender name="org_mybatis_durid_sql_appender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${LOG_HOME}/org_mybatis_durid_sql_appender.log</File>
@@ -66,32 +62,25 @@
     <logger name="org.mybatis" level="DEBUG" additivity="false">
         <appender-ref ref="org_mybatis_durid_sql_appender"/>
     </logger>
-    <logger name="druid.sql" level="DEBUG" additivity="false">
+    <logger name="com.alibaba.druid" level="DEBUG" additivity="false">
         <appender-ref ref="org_mybatis_durid_sql_appender"/>
     </logger>
     <logger name="org.apache.ibatis" level="DEBUG" additivity="false">
         <appender-ref ref="org_mybatis_durid_sql_appender"/>
     </logger>
-    <logger name="com.ipaynow.operation_center_dao.service.mybatis.mapper" level="DEBUG" additivity="false">
+    <logger name="com.ipaynow.hr.dao.mybatis.mapper" level="DEBUG" additivity="false">
         <appender-ref ref="org_mybatis_durid_sql_appender"/>
     </logger>
 
-    <appender name="study_spring_boot" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>${LOG_HOME}/study_spring_boot.log</File>
-        <encoder>
-            <pattern>%d{yy-MM-dd.HH:mm:ss.SSS} [%t] %-5p %C{5} [%L]- %m%n</pattern>
-            <charset>UTF-8</charset>
-        </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/study_spring_boot.log.%d{yyyyMMdd}.%i%d{HH}</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>50MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
-    </appender>
+    <!--<appender name="logstash" class="com.ipaynow.RedisAppender">-->
+        <!--<source>operation_main</source>-->
+        <!--<host>${logstash_redis_ip}</host>-->
+        <!--<port>${logstash_redis_port}</port>-->
+        <!--<password>${logstash_redis_password}</password>-->
+      <!--</appender>-->
 
-    <logger name="com.study" level="DEBUG" additivity="false">
-        <appender-ref ref="study_spring_boot"/>
+    <logger name="controller_log" level="DEBUG" additivity="false">
+        <appender-ref ref="controller_log_appender"/>
     </logger>
 
 </configuration>

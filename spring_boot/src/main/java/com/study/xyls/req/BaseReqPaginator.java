@@ -1,7 +1,6 @@
 package com.study.xyls.req;
 
 
-import com.ipaynow.ipaynow_user.mvc_support.params.req.BaseReq;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

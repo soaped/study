@@ -1,6 +1,7 @@
 package com.study.xyls.dao.mybatis.domain;
 
-import com.ipaynow.npacc.mybatis_plugin.Page;
+import com.xyls.mybatus_plugin.Page;
+
 import java.util.ArrayList;
 import java.util.List;
 

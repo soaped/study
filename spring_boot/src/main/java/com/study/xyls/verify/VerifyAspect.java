@@ -1,6 +1,6 @@
 package com.study.xyls.verify;
 
-import com.ipaynow.operation_sdk.mvc_support.params.resp.MvcResponse;
+import com.study.xyls.vo.MvcResponse;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
