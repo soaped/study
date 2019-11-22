@@ -1,4 +1,4 @@
-package com.xyls.study.queue;
+package com.soap.study.queue;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
