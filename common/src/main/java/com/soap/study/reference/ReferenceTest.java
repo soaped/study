@@ -1,4 +1,4 @@
-package com.xyls.study.reference;
+package com.soap.study.reference;
 
 import java.lang.ref.SoftReference;
 

@@ -1,4 +1,4 @@
-package com.xyls.study.thread;
+package com.soap.study.thread;
 
 import java.util.concurrent.CountDownLatch;
 

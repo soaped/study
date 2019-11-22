@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>study</artifactId>
-        <groupId>com.xyls</groupId>
+        <groupId>com.soap</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -28,78 +28,78 @@
                                <encoding>utf8</encoding>
                            </configuration>
                        </plugin>
-                       <plugin>
-                           <groupId>com.baomidou</groupId>
-                           <artifactId>mybatisplus-maven-plugin</artifactId>
-                           <version>1.0</version>
-                           <configuration>
-                               <!-- 输出目录(默认java.io.tmpdir) -->
-                               <outputDir>D:\ipaynow\study\mybatis_plus</outputDir>
-                               <!-- 是否覆盖同名文件(默认false) -->
-                               <fileOverride>true</fileOverride>
-                               <!-- mapper.xml 中添加二级缓存配置(默认true) -->
-                               <enableCache>true</enableCache>
-                               <!-- 开发者名称 -->
-                               <author>yangfuzhao</author>
-                               <!-- 是否开启 ActiveRecord 模式(默认true) -->
-                               <activeRecord>false</activeRecord>
-                               <!-- 数据源配置，( **必配** ) -->
-                               <dataSource>
-                                   <driverName>com.mysql.jdbc.Driver</driverName>
-                                   <url>jdbc:mysql://192.168.0.51:3306/operation_identify?useUnicode=true</url>
-                                   <username>root</username>
-                                   <password>$root@ipaynow_test</password>
-                               </dataSource>
-                               <strategy>
-                                   <!-- 字段生成策略，四种类型，从名称就能看出来含义：
-                                       nochange(默认),
-                                       underline_to_camel,(下划线转驼峰)
-                                       remove_prefix,(去除第一个下划线的前部分，后面保持不变)
-                                       remove_prefix_and_camel(去除第一个下划线的前部分，后面转驼峰) -->
-                                   <naming>remove_prefix_and_camel</naming>
-                                   <!-- 表前缀 -->
-                                   <tablePrefix>inner_</tablePrefix>
-                                   <!--Entity中的ID生成策略（默认 id_worker）-->
-                                   <!--<idGenType>uuid</idGenType>-->
-                                   <!--自定义超类-->
-                                   <!--<superServiceClass>com.baomidou.base.BaseService</superServiceClass>-->
-                                   <!-- 要包含的表 与exclude 二选一配置-->
-                                   <include>
-                                       <property>inner_role</property>
-                                       <property>inner_role_permission</property>
-                                   </include>
-                                   <!-- 要排除的表 -->
-                                   <!--<exclude>-->
-                                   <!--<property>schema_version</property>-->
-                                   <!--</exclude>-->
-                               </strategy>
-                               <packageInfo>
-                                   <!-- 父级包名称，如果不写，下面的service等就需要写全包名(默认com.baomidou) -->
-                                   <parent>com.xyls</parent>
-                                   <!--service包名(默认service)-->
-                                   <service>service</service>
-                                   <!--serviceImpl包名(默认service.impl)-->
-                                   <serviceImpl>service.impl</serviceImpl>
-                                   <!--entity包名(默认entity)-->
-                                   <entity>dao</entity>
-                                   <!--mapper包名(默认mapper)-->
-                                   <mapper>mapper</mapper>
-                                   <!--xml包名(默认mapper.xml)-->
-                                   <xml>mapper.xml</xml>
-                               </packageInfo>
-                               <template>
-                                   <!-- 定义controller模板的路径 -->
-                                   <!--<controller>/template/controller1.java.vm</controller>-->
-                               </template>
-                           </configuration>
-                           <dependencies>
-                               <dependency>
-                                   <groupId>mysql</groupId>
-                                   <artifactId>mysql-connector-java</artifactId>
-                                   <version>${mysql-connector-java.version}</version>
-                               </dependency>
-                           </dependencies>
-                       </plugin>
+<!--                       <plugin>-->
+<!--                           <groupId>com.baomidou</groupId>-->
+<!--                           <artifactId>mybatisplus-maven-plugin</artifactId>-->
+<!--                           <version>1.0</version>-->
+<!--                           <configuration>-->
+<!--                               &lt;!&ndash; 输出目录(默认java.io.tmpdir) &ndash;&gt;-->
+<!--                               <outputDir>D:\ipaynow\study\mybatis_plus</outputDir>-->
+<!--                               &lt;!&ndash; 是否覆盖同名文件(默认false) &ndash;&gt;-->
+<!--                               <fileOverride>true</fileOverride>-->
+<!--                               &lt;!&ndash; mapper.xml 中添加二级缓存配置(默认true) &ndash;&gt;-->
+<!--                               <enableCache>true</enableCache>-->
+<!--                               &lt;!&ndash; 开发者名称 &ndash;&gt;-->
+<!--                               <author>yangfuzhao</author>-->
+<!--                               &lt;!&ndash; 是否开启 ActiveRecord 模式(默认true) &ndash;&gt;-->
+<!--                               <activeRecord>false</activeRecord>-->
+<!--                               &lt;!&ndash; 数据源配置，( **必配** ) &ndash;&gt;-->
+<!--                               <dataSource>-->
+<!--                                   <driverName>com.mysql.jdbc.Driver</driverName>-->
+<!--                                   <url>jdbc:mysql://192.168.0.51:3306/operation_identify?useUnicode=true</url>-->
+<!--                                   <username>root</username>-->
+<!--                                   <password>$root@ipaynow_test</password>-->
+<!--                               </dataSource>-->
+<!--                               <strategy>-->
+<!--                                   &lt;!&ndash; 字段生成策略，四种类型，从名称就能看出来含义：-->
+<!--                                       nochange(默认),-->
+<!--                                       underline_to_camel,(下划线转驼峰)-->
+<!--                                       remove_prefix,(去除第一个下划线的前部分，后面保持不变)-->
+<!--                                       remove_prefix_and_camel(去除第一个下划线的前部分，后面转驼峰) &ndash;&gt;-->
+<!--                                   <naming>remove_prefix_and_camel</naming>-->
+<!--                                   &lt;!&ndash; 表前缀 &ndash;&gt;-->
+<!--                                   <tablePrefix>inner_</tablePrefix>-->
+<!--                                   &lt;!&ndash;Entity中的ID生成策略（默认 id_worker）&ndash;&gt;-->
+<!--                                   &lt;!&ndash;<idGenType>uuid</idGenType>&ndash;&gt;-->
+<!--                                   &lt;!&ndash;自定义超类&ndash;&gt;-->
+<!--                                   &lt;!&ndash;<superServiceClass>com.baomidou.base.BaseService</superServiceClass>&ndash;&gt;-->
+<!--                                   &lt;!&ndash; 要包含的表 与exclude 二选一配置&ndash;&gt;-->
+<!--                                   <include>-->
+<!--                                       <property>inner_role</property>-->
+<!--                                       <property>inner_role_permission</property>-->
+<!--                                   </include>-->
+<!--                                   &lt;!&ndash; 要排除的表 &ndash;&gt;-->
+<!--                                   &lt;!&ndash;<exclude>&ndash;&gt;-->
+<!--                                   &lt;!&ndash;<property>schema_version</property>&ndash;&gt;-->
+<!--                                   &lt;!&ndash;</exclude>&ndash;&gt;-->
+<!--                               </strategy>-->
+<!--                               <packageInfo>-->
+<!--                                   &lt;!&ndash; 父级包名称，如果不写，下面的service等就需要写全包名(默认com.baomidou) &ndash;&gt;-->
+<!--                                   <parent>com.xyls</parent>-->
+<!--                                   &lt;!&ndash;service包名(默认service)&ndash;&gt;-->
+<!--                                   <service>service</service>-->
+<!--                                   &lt;!&ndash;serviceImpl包名(默认service.impl)&ndash;&gt;-->
+<!--                                   <serviceImpl>service.impl</serviceImpl>-->
+<!--                                   &lt;!&ndash;entity包名(默认entity)&ndash;&gt;-->
+<!--                                   <entity>dao</entity>-->
+<!--                                   &lt;!&ndash;mapper包名(默认mapper)&ndash;&gt;-->
+<!--                                   <mapper>mapper</mapper>-->
+<!--                                   &lt;!&ndash;xml包名(默认mapper.xml)&ndash;&gt;-->
+<!--                                   <xml>mapper.xml</xml>-->
+<!--                               </packageInfo>-->
+<!--                               <template>-->
+<!--                                   &lt;!&ndash; 定义controller模板的路径 &ndash;&gt;-->
+<!--                                   &lt;!&ndash;<controller>/template/controller1.java.vm</controller>&ndash;&gt;-->
+<!--                               </template>-->
+<!--                           </configuration>-->
+<!--                           <dependencies>-->
+<!--                               <dependency>-->
+<!--                                   <groupId>mysql</groupId>-->
+<!--                                   <artifactId>mysql-connector-java</artifactId>-->
+<!--                                   <version>${mysql-connector-java.version}</version>-->
+<!--                               </dependency>-->
+<!--                           </dependencies>-->
+<!--                       </plugin>-->
                    </plugins>
              </build>
 

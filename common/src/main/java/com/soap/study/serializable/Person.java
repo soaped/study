@@ -1,4 +1,4 @@
-package com.xyls.study.serializable;
+package com.soap.study.serializable;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

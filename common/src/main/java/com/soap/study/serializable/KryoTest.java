@@ -1,4 +1,4 @@
-package com.xyls.study.serializable;
+package com.soap.study.serializable;
 
 import com.esotericsoftware.kryo.Kryo;
 

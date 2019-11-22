@@ -1,4 +1,4 @@
-package com.xyls.study.thread;
+package com.soap.study.thread;
 
 import org.joda.time.DateTime;
 import org.junit.Test;

@@ -1,22 +1,24 @@
-package com.xyls.study.queue;
+package com.soap.study.queue;
 
 import java.util.concurrent.BlockingQueue;
 
 /**
  * Created by ipaynow0929 on 2017/10/9.
  */
-public class Consumer implements Runnable {
+public class Producer implements Runnable {
     protected BlockingQueue queue = null;
 
-    public Consumer(BlockingQueue queue) {
+    public Producer(BlockingQueue queue) {
         this.queue = queue;
     }
 
     public void run() {
         try {
-            System.out.println(queue.take());
-            System.out.println(queue.take());
-            System.out.println(queue.take());
+            queue.put("3");
+            Thread.sleep(1000);
+            queue.put("2");
+            Thread.sleep(1000);
+            queue.put("1");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
