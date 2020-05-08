@@ -1,6 +1,6 @@
-package com.study.xyls.verify;
+package com.soap.spring.verify;
 
-import com.study.xyls.vo.MvcResponse;
+import com.soap.spring.vo.MvcResponse;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

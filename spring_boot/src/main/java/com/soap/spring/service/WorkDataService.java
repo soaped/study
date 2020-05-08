@@ -1,4 +1,4 @@
-package com.study.xyls.service;
+package com.soap.spring.service;
 
 import org.springframework.stereotype.Service;
 

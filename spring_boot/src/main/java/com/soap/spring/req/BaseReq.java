@@ -1,4 +1,4 @@
-package com.study.xyls.req;
+package com.soap.spring.req;
 
 import java.io.Serializable;
 

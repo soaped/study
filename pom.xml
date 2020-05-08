@@ -10,13 +10,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>common</module>
-        <!--<module>spring_boot</module>-->
+        <module>spring_boot</module>
         <!--<module>mybatis_plugin</module>-->
-        <!--<module>common_util</module>-->
+<!--        <module>common_util</module>-->
         <!--<module>dao</module>-->
-        <module>mybatis_plus</module>
+<!--        <module>mybatis_plus</module>-->
         <module>sandbox</module>
-        <module>ffmepg</module>
         <module>ffmepg</module>
     </modules>
 

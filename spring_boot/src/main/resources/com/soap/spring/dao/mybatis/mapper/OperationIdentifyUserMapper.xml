@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soap.spring.dao.mybatis.mapper.OperationIdentifyUserMapper">
+  <resultMap id="BaseResultMap" type="com.soap.spring.dao.mybatis.domain.OperationIdentifyUser">
+    <!--@mbg.generated-->
+    <!--@Table operation_identify_user-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="usr_cd" jdbcType="VARCHAR" property="usrCd" />
+    <result column="usr_nm" jdbcType="VARCHAR" property="usrNm" />
+    <result column="usr_pwd" jdbcType="VARCHAR" property="usrPwd" />
+    <result column="usr_sex" jdbcType="INTEGER" property="usrSex" />
+    <result column="brh_cd" jdbcType="INTEGER" property="brhCd" />
+    <result column="dept_cd" jdbcType="INTEGER" property="deptCd" />
+    <result column="expired_date" jdbcType="TIMESTAMP" property="expiredDate" />
+    <result column="enable" jdbcType="INTEGER" property="enable" />
+    <result column="usr_mob" jdbcType="VARCHAR" property="usrMob" />
+    <result column="usr_email" jdbcType="VARCHAR" property="usrEmail" />
+    <result column="admin" jdbcType="INTEGER" property="admin" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="reg_time" jdbcType="TIMESTAMP" property="regTime" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+    <result column="login_times" jdbcType="INTEGER" property="loginTimes" />
+    <result column="init_pwd" jdbcType="VARCHAR" property="initPwd" />
+    <result column="lock_status" jdbcType="INTEGER" property="lockStatus" />
+    <result column="last_lock_time" jdbcType="TIMESTAMP" property="lastLockTime" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, usr_cd, usr_nm, usr_pwd, usr_sex, brh_cd, dept_cd, expired_date, `enable`, usr_mob, 
+    usr_email, `admin`, remark, reg_time, login_time, login_times, init_pwd, lock_status, 
+    last_lock_time, open_id
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update operation_identify_user
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="usr_cd = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.usrCd,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="usr_nm = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.usrNm,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="usr_pwd = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.usrPwd,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="usr_sex = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.usrSex,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="brh_cd = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.brhCd,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="dept_cd = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.deptCd,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="expired_date = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.expiredDate,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="`enable` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.enable,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="usr_mob = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.usrMob,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="usr_email = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.usrEmail,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="`admin` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.admin,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="remark = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.remark,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="reg_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.regTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="login_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.loginTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="login_times = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.loginTimes,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="init_pwd = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.initPwd,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="lock_status = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.lockStatus,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="last_lock_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.lastLockTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="open_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.openId,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+</mapper>

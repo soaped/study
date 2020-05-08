@@ -1,4 +1,4 @@
-package com.study.xyls.req;
+package com.soap.spring.req;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

@@ -1,8 +1,8 @@
-package com.study.xyls.controller;
+package com.soap.spring.controller;
 
 
-import com.study.xyls.req.GetWorkDataReq;
-import com.study.xyls.vo.MvcResponse;
+import com.soap.spring.req.GetWorkDataReq;
+import com.soap.spring.vo.MvcResponse;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;

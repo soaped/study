@@ -1,4 +1,4 @@
-package com.study.xyls.utils;
+package com.soap.spring.utils;
 
 import org.jasypt.encryption.StringEncryptor;
 
@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 
 /**
- * Created by ipaynow0929 on 2017/9/26.
+ * Created by soap on 2017/9/26.
  */
 public class DefaultEncryptor implements StringEncryptor {
     @Override

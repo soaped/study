@@ -12,33 +12,39 @@
 
 
     <properties>
-        <MainClass>com.ipaynow.hr.Application</MainClass>
+        <MainClass>com.soap.spring.Application</MainClass>
         <commons-lang3.version>3.3</commons-lang3.version>
         <org.projectlombok.version>1.16.10</org.projectlombok.version>
-        <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
+        <spring.boot.version>2.2.3.RELEASE</spring.boot.version>
+        <spring.version>4.3.17.RELEASE</spring.version>
         <mybatis.version>3.2.8</mybatis.version>
         <mybatis_plugin>1.0.4-SNAPSHOT</mybatis_plugin>
         <mybatis-generator-maven-plugin.version>1.3.2</mybatis-generator-maven-plugin.version>
         <mysql-connector-java.version>5.1.20</mysql-connector-java.version>
     </properties>
 
-
-    <groupId>com.xyls</groupId>
     <artifactId>spring_boot</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
 
+        <!--spring boot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring.boot.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-validator</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-redis</artifactId>-->
-            <!--<version>${spring.boot.version}</version>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-redis</artifactId>-->
+        <!--<version>${spring.boot.version}</version>-->
         <!--</dependency>-->
 
         <!--web socket-->
@@ -47,21 +53,64 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-jetty</artifactId>-->
+        <!--            <version>${spring.boot.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+        <!--            <version>${spring.boot.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-jdbc</artifactId>-->
+        <!--            <version>${spring.boot.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
+        <!--            <version>${spring.boot.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-test</artifactId>-->
+        <!--            <version>${spring.boot.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework</groupId>-->
+        <!--            <artifactId>spring-test</artifactId>-->
+        <!--            <version>${spring.version}</version>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring.boot.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.1.1</version>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.xyls</groupId>-->
+        <!--            <artifactId>mybatis_plugin</artifactId>-->
+        <!--            <version>1.0-SNAPSHOT</version>-->
+        <!--            &lt;!&ndash;<exclusions>&ndash;&gt;-->
+        <!--                &lt;!&ndash;<exclusion>&ndash;&gt;-->
+        <!--                    &lt;!&ndash;<groupId>org.springframework.data</groupId>&ndash;&gt;-->
+        <!--                    &lt;!&ndash;<artifactId>spring-data-redis</artifactId>&ndash;&gt;-->
+        <!--                &lt;!&ndash;</exclusion>&ndash;&gt;-->
+        <!--            &lt;!&ndash;</exclusions>&ndash;&gt;-->
+        <!--        </dependency>-->
+
+        <!--        mybatis plus-->
         <dependency>
-            <groupId>com.xyls</groupId>
-            <artifactId>mybatis_plugin</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.springframework.data</groupId>-->
-                    <!--<artifactId>spring-data-redis</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.3.0</version>
         </dependency>
 
         <dependency>
@@ -110,16 +159,34 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.2.2</version>
         </dependency>
-        
+
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.8.10</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
-    
+
     <build>
-        <sourceDirectory>src/main/java</sourceDirectory>
+        <!--        <sourceDirectory>src/main/java</sourceDirectory>-->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -129,16 +196,16 @@
             </resource>
         </resources>
         <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.2</version>
-            <configuration>
-                <source>1.7</source>
-                <target>1.7</target>
-                <encoding>utf8</encoding>
-            </configuration>
-        </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>utf8</encoding>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -146,17 +213,6 @@
                 <configuration>
                     <!--fork :  如果没有该项配置，devtools不会起作用，即应用不会restart -->
                     <fork>true</fork>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                    <encoding>utf8</encoding>
                 </configuration>
             </plugin>
 

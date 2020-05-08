@@ -1,12 +1,13 @@
-package com.study.xyls;
+package com.soap.spring;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
-import com.study.xyls.filter.LogFilter;
-import com.study.xyls.utils.DefaultEncryptor;
+//import com.soap.spring.filter.LogFilter;
+import com.soap.spring.utils.DefaultEncryptor;
 import org.jasypt.encryption.StringEncryptor;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -17,15 +18,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
 /**
- * Created by ipaynow0929 on 2017/8/3.
+ * Created by soap on 2017/8/3.
  */
-@ComponentScan(basePackages = "com.study.xyls")
+@ComponentScan(basePackages = "com.soap.spring")
 //开启事务
 @EnableTransactionManagement
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+//@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 //配置扫描mapper
-@MapperScan("com.ipaynow.hr.dao.mybatis")
+@MapperScan("com.soap.spring.dao")
+@EnableAutoConfiguration
 
 //开启定时任务
 //@EnableScheduling
@@ -68,15 +70,15 @@ public class Application {
         return registrationBean;
     }
 
-    @Bean
-    public FilterRegistrationBean CustomFilterRegistrationBean() {
-        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
-        LogFilter logFilter = new LogFilter();
-        registrationBean.addUrlPatterns("/*");
-        registrationBean.setFilter(logFilter);
-        registrationBean.setOrder(2);
-        return registrationBean;
-    }
+//    @Bean
+//    public FilterRegistrationBean CustomFilterRegistrationBean() {
+//        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+//        LogFilter logFilter = new LogFilter();
+//        registrationBean.addUrlPatterns("/*");
+//        registrationBean.setFilter(logFilter);
+//        registrationBean.setOrder(2);
+//        return registrationBean;
+//    }
 
     /**
      * druid监控

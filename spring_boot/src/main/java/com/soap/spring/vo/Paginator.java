@@ -1,4 +1,4 @@
-package com.study.xyls.vo;
+package com.soap.spring.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

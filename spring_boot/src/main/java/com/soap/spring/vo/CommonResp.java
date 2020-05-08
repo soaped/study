@@ -1,4 +1,4 @@
-package com.study.xyls.vo;
+package com.soap.spring.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

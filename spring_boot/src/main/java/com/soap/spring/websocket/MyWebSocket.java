@@ -1,4 +1,4 @@
-package com.study.xyls.websocket;
+package com.soap.spring.websocket;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;

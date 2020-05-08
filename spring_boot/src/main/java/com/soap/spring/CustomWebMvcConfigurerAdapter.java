@@ -1,4 +1,4 @@
-package com.study.xyls;
+package com.soap.spring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 /**
- * Created by ipaynow0929 on 2018/1/11.
+ * Created by soap on 2018/1/11.
  */
 //标注此文件为一个配置项，spring boot才会扫描到该配置。该注解类似于之前使用xml进行配置
 @Configuration

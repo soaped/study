@@ -1,4 +1,4 @@
-package com.study.xyls.schedule;
+package com.soap.spring.schedule;
 
 import org.joda.time.DateTime;
 import org.springframework.scheduling.annotation.Scheduled;

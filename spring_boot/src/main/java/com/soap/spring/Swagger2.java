@@ -1,4 +1,4 @@
-package com.study.xyls;
+package com.soap.spring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * Created by ipaynow0929 on 2018/1/11.
+ * Created by soap on 2018/1/11.
  */
 @Configuration
 @EnableSwagger2
@@ -21,15 +21,15 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ipaynow.hr"))
+                .apis(RequestHandlerSelectors.basePackage("com.soap.spring"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("现在支付 hr APIs")
-                .contact("ipaynow0909")
+                .title("soap hr APIs")
+                .contact("soap")
                 .version("1.0")
                 .build();
     }
