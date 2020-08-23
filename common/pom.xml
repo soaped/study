@@ -24,6 +24,12 @@
             <type>pom</type>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.calcite</groupId>
+            <artifactId>calcite</artifactId>
+            <version>1.21.0</version>
+        </dependency>
+
 
         <!--        <dependency>-->
 <!--            <groupId>com.alibaba.rocketmq</groupId>-->
