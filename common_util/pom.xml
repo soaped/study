@@ -64,7 +64,7 @@
         <aspectjweaver.version>1.8.6</aspectjweaver.version>
         <xstream.version>1.4.9</xstream.version>
 
-        <org.apache.ant.version>1.8.1</org.apache.ant.version>
+        <org.apache.ant.version>1.9.15</org.apache.ant.version>
         <org.codehaus.janino.version>2.6.1</org.codehaus.janino.version>
         <net.coobird.thumbnailator.version>0.4.8</net.coobird.thumbnailator.version>
         <grpc.version>0.13.2</grpc.version>
