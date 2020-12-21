@@ -17,7 +17,19 @@
 <!--        <module>mybatis_plus</module>-->
 <!--        <module>sandbox</module>-->
         <module>ffmepg</module>
+        <module>flink</module>
     </modules>
+    <properties>
+        <flink.version>1.9.0</flink.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <repositories>
         <repository>
