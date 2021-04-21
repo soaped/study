@@ -37,7 +37,7 @@
 
 
         <commons-io.version>2.4</commons-io.version>
-        <commons-beanutils>1.9.2</commons-beanutils>
+        <commons-beanutils>1.9.4</commons-beanutils>
         <commons-lang3.version>3.3</commons-lang3.version>
         <commons-collections4.version>4.1</commons-collections4.version>
 
