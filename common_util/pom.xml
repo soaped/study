@@ -59,7 +59,7 @@
         <jsch.version>0.1.42</jsch.version>
         <org.projectlombok.version>1.16.10</org.projectlombok.version>
         <zxing.core.version>2.2</zxing.core.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <aspectjrt.version>1.8.6</aspectjrt.version>
         <aspectjweaver.version>1.8.6</aspectjweaver.version>
         <xstream.version>1.4.9</xstream.version>
