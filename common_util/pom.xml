@@ -62,7 +62,7 @@
         <junit.version>4.12</junit.version>
         <aspectjrt.version>1.8.6</aspectjrt.version>
         <aspectjweaver.version>1.8.6</aspectjweaver.version>
-        <xstream.version>1.4.9</xstream.version>
+        <xstream.version>1.4.17</xstream.version>
 
         <org.apache.ant.version>1.8.1</org.apache.ant.version>
         <org.codehaus.janino.version>2.6.1</org.codehaus.janino.version>
